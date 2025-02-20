@@ -18,7 +18,7 @@ mainReplSdk PROC
 
 	sub rsp, 28h		;	reserved as parameters' shadow area and align stack to 16
 
-	mov rcx, 0
+	mov rcx, 0 
 	lea rdx, myText
 	lea r8, myCaption
 	mov r9, 0
