@@ -6,7 +6,7 @@ bare.zip - minimalistic way to assemble the 64 helloworld example without VS. Un
 
 To choose the appropriate example to build it by VS please change Project properties - configuration properties - linker - advanced - entry point - mainHelloWorld/mainRepl/mainReplSdk
 
-* HelloWorld.asm - hello world message box with unicode strings
+* HelloWorld.asm - hello world message box with unicode strings 
 
 * Repl.asm - console read/write unicode example, type anything to repeat, type 'quit' for quit
 
