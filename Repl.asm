@@ -3,11 +3,11 @@ ExitProcess PROTO
 MessageBoxW PROTO
 
 .data
-myText			dw 0041fh, 00440h, 00438h, 00432h, 00435h, 00442h, 0002ch, 00020h, 0043ch, 00438h, 00440h, 0 ;привет, мир
-myCaption		dw 0042eh, 0043dh, 00438h, 0043ah, 0043eh, 00434h, 0 ;юникод
+myText			dw 0041fh, 00440h, 00438h, 00432h, 00435h, 00442h, 0002ch, 0 ;привет, мир
+myCaption		dw 0042eh, 0043dh, 00438h, 0 ;юникод
 
 .code
-mainHelloWorld PROC
+mainRepl PROC
 
 	sub rsp, 28h		;	reserved as parameters' shadow area and align stack to 16
 
@@ -24,6 +24,6 @@ mainHelloWorld PROC
 	add rsp, 28h
 	ret
 	
-mainHelloWorld ENDP
+mainRepl ENDP
 
 END

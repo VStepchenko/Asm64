@@ -18,5 +18,11 @@
     <MASM Include="HelloWorld.asm">
       <Filter>Source Files</Filter>
     </MASM>
+    <MASM Include="Repl.asm">
+      <Filter>Source Files</Filter>
+    </MASM>
+    <MASM Include="ReplSdk.asm">
+      <Filter>Source Files</Filter>
+    </MASM>
   </ItemGroup>
 </Project>
