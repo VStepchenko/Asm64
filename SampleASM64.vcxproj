@@ -107,7 +107,7 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <EntryPointSymbol>mainReplSdk</EntryPointSymbol>
+      <EntryPointSymbol>mainHelloWorld</EntryPointSymbol>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -149,6 +149,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <MASM Include="HelloWorld.asm" />
+    <MASM Include="HelloWorldSdk.asm" />
     <MASM Include="Repl.asm" />
     <MASM Include="ReplSdk.asm" />
   </ItemGroup>
