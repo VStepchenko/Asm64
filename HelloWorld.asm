@@ -18,7 +18,7 @@ mainHelloWorld PROC
 
 	call MessageBoxW
 
-	mov rcx, 12345678	; the exit code, means nothing 
+	mov rcx, 12345678	; the exit code, means nothing
 	call ExitProcess
 
 	add rsp, 28h
