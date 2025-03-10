@@ -51,8 +51,7 @@ mainReplSdk PROC
     
     endrepl:
 
-    mov rcx, 0	; the exit code
-    call ExitProcess
+    invoke ExitProcess, 0
 
     ret
 
@@ -107,7 +106,7 @@ RemoveCrLf proc
 RemoveCrLf endp
 
 ; the substring is in the rcx 
-; the string to check is it starts with the sgiven substring is in the rdx
+; the string to check is it starts with the given substring is in the rdx
 ; if the 'rdx' string starts with the 'rcx' string, returns 1, otherwise 0
 StartsWith proc
 
