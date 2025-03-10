@@ -10,8 +10,8 @@ include ..\..\..\..\..\..\masm64\macros64\vasily.inc
 include ..\..\..\..\..\..\masm64\macros64\macros64.inc
 
 .data
-myText			dw 0041fh, 00440h, 00438h, 00432h, 00435h, 00442h, 0002ch, 00020h, 0043ch, 00438h, 00440h, 0 ;привет, мир
-myCaption		dw 0042eh, 0043dh, 00438h, 0043ah, 0043eh, 00434h, 0 ;юникод
+myText           dw 0041fh, 00440h, 00438h, 00432h, 00435h, 00442h, 0002ch, 00020h, 0043ch, 00438h, 00440h, 0 ;привет, мир
+myCaption        dw 0042eh, 0043dh, 00438h, 0043ah, 0043eh, 00434h, 0 ;юникод
 
 .code
 
@@ -19,11 +19,11 @@ STACKFRAME
 
 mainHelloWorldSdk PROC
 
-	invoke MessageBoxW, NULL, ADDR myText, ADDR myCaption, MB_OK
+    invoke MessageBoxW, NULL, ADDR myText, ADDR myCaption, MB_OK
 
-	invoke ExitProcess, 12345678 ; the exit code, means nothing 
+    invoke ExitProcess, 12345678 ; the exit code, means nothing 
 
-	ret
+    ret
 
 mainHelloWorldSdk ENDP
 

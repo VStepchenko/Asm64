@@ -106,7 +106,9 @@ RemoveCrLf proc
 
 RemoveCrLf endp
 
-; the string to seek is rcx, where to find rdx
+; the substring is in the rcx 
+; the string to check is it starts with the sgiven substring is in the rdx
+; if the 'rdx' string starts with the 'rcx' string, returns 1, otherwise 0
 StartsWith proc
 
     LOCAL patternLength : QWORD
