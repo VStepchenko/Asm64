@@ -1,7 +1,5 @@
 
 ExitProcess    PROTO
-MessageBoxW    PROTO
-
 GetStdHandle   PROTO
 SetConsoleMode PROTO
 ReadConsoleW   PROTO
@@ -35,7 +33,7 @@ mainRepl PROC
     LOCAL hInput :QWORD
     LOCAL actuallyRead  :QWORD
 
-    sub rsp, 28h
+    sub rsp, 30h
 
     mov rcx, STD_INPUT_HANDLE
     call GetStdHandle
@@ -86,7 +84,7 @@ mainRepl PROC
     mov rcx, 0
     call ExitProcess
 
-    add rsp, 28h
+    add rsp, 30h
     ret
 
 mainRepl ENDP
@@ -96,7 +94,7 @@ ConsoleOut_ proc
     LOCAL charsWritten  :QWORD
     LOCAL hOutput :QWORD
 
-    sub rsp, 28h
+    sub rsp, 30h
 
     mov r12, rcx
 
@@ -120,7 +118,7 @@ ConsoleOut_ proc
 
     mov rax, charsWritten
 
-    add rsp, 28h
+    add rsp, 30h
     ret
 
 ConsoleOut_ endp
