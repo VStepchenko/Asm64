@@ -25,7 +25,7 @@ STD_OUTPUT_HANDLE           equ -11
 
 NULL                        equ 0
 
-Par5 equ qword ptr [rsp + 32]
+Parameter5 equ qword ptr [rsp + 32]
 
 .code
 mainRepl PROC
