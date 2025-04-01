@@ -96,6 +96,8 @@ GetStringLength proc
 
 GetStringLength endp
 
+; rcx is the string
+; rdx is the string length
 RemoveCrLf proc
 
     sub rdx, 2

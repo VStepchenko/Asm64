@@ -140,6 +140,8 @@ GetStringLength_ proc
 
 GetStringLength_ endp
 
+; rcx is the string
+; rdx is the string length
 RemoveCrLf_ proc
 
     sub rdx, 2
